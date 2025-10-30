@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Teacher Dashboard</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/teacher.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">📘 Teacher Panel</div>
+    <div class="menu">
+      <a href="#">Students</a>
+      <a href="#">Tests</a>
+      <a href="#">Remarks</a>
+      <a href="#">Reports</a>
+    </div>
+    <div class="hamburger">☰</div>
+  </nav>
+
+  <section class="student-search">
+    <h2>Search Student</h2>
+    <input type="text" id="studentSearch" placeholder="Enter Student Name" />
+    <button id="searchBtn">Search</button>
+  </section>
+
+  <section class="student-data">
+    <div id="studentInfo"></div>
+  </section>
+
+  <section class="remarks">
+    <h3>Give Remarks</h3>
+    <textarea id="remarkText" placeholder="Write remark..."></textarea>
+    <button id="saveRemark">Save</button>
+  </section>
+
+  <section class="report">
+    <button id="downloadAll">Download All Student Data (PDF)</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Student Teacher Portal | All Rights Reserved</p>
+  </footer>
+
+  <script src="js/common.js"></script>
+  <script src="js/teacher.js"></script>
+</body>
+</html>

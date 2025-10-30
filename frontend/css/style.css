@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, sans-serif;
+  background: #f9f9f9;
+  margin: 0;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 10px 20px;
+}
+
+.menu a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .hamburger {
+    display: block;
+  }
+}
+
+footer {
+  background: #222;
+  color: #aaa;
+  text-align: center;
+  padding: 10px;
+  margin-top: 40px;
+}

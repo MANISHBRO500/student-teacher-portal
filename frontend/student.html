@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Student Dashboard</title>
+  <link rel="stylesheet" href="css/common.css" />
+  <link rel="stylesheet" href="css/student.css" />
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="logo">📘 Student Panel</div>
+    <div class="menu">
+      <a href="#">Dashboard</a>
+      <a href="#">Year Data</a>
+      <a href="#">Remarks</a>
+    </div>
+    <div class="hamburger">☰</div>
+  </nav>
+
+  <section class="dashboard">
+    <div class="left">
+      <canvas id="marksGraph"></canvas>
+    </div>
+    <div class="right">
+      <div class="scoreboard">
+        <h2 id="studentName">Student Name</h2>
+        <p>Total Marks: <span id="totalMarks">--</span></p>
+        <p>Marks Obtained: <span id="marksObtained">--</span></p>
+        <p>Percentage: <span id="percentage">--</span>%</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="yearly">
+    <h3>Yearly Performance (Jan–Dec)</h3>
+    <canvas id="yearGraph"></canvas>
+  </section>
+
+  <section class="download">
+    <button id="downloadPDF">Download Full Report</button>
+  </section>
+
+  <footer>
+    <p>© 2025 Student Teacher Portal | All Rights Reserved</p>
+  </footer>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="js/common.js"></script>
+  <script src="js/student.js"></script>
+</body>
+</html>

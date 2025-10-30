@@ -1,0 +1,21 @@
+.dashboard {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+.left, .right {
+  width: 48%;
+}
+
+.scoreboard {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 0 10px #ccc;
+}
+
+.yearly, .download {
+  text-align: center;
+  margin-top: 30px;
+}
